@@ -1,0 +1,477 @@
+
+  
+  
+
+  /* BRAND SECTION */
+  .brand_heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--charSpace);
+    height: 150px;
+   margin-top: 8rem;
+   margin-left: 4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  /* CONTAINER COMMON CSS */
+  .container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    column-gap: 3rem;
+  }
+
+  /* BRAND DISPLAY 1 */
+  #topBrand_1{   
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #topBrand_1 img, #topBrand_women img{
+      width: 100%;
+  }
+  #topBrand_women{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+  /* CATEGORY BAG SECTION */
+  #categoryBag, .categoryBag_women{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #categoryBag img, .categoryBag_women img {
+      width: 100%;
+  }
+
+
+
+  /* BRAND DISPLAY 2 */
+  .display{
+      grid-template-columns: repeat(5, 1fr);
+  }
+  .display img{
+      width: 100%;
+  }
+
+
+  /* BRAND DISPLAY 3 */
+  .display ~ .display{
+      grid-template-columns: repeat(6, 1fr);
+  }
+
+
+  /* CATEGORIES AND REST OF CONTENT DISPLAY */
+  .builder{
+      grid-template-columns: repeat(5, 1fr);
+  }
+  .builder img{
+      width: 100%;
+  }
+
+
+  /* FOOTER SECTION */
+ 
+  
+  
+
+
+  /* MEDIA QUERIES FOR TABLET VIEW */
+  @media all and (min-width: 551px) and (max-width: 850px) {
+      
+    /* NAVBAR */
+  
+
+    /* TOGGLE MENU */
+    .dropbtn {
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        background-color: #ff9faf;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        transition: all 500ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+      }
+      .dropdown-content .top{
+          padding: 0 0.5rem;
+          background-color: #ffc0cb;
+      }
+      .dropdown-content .bottom{
+          display: none;
+      }
+      
+      .dropdown-content a {
+        color: var(--primaryColor);
+        width: 89%;
+        margin: auto;
+        padding: 1.2rem 2rem;
+        text-decoration: none;
+        display: block;
+        font-size:1.6rem;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+      }
+      
+      .dropdown-content a:hover{
+        background-color: #ffe5e9;
+        border-radius: 1rem;
+      }
+      .show {
+          width: 300px;
+          height: 300px;
+    }
+
+    /* SLIDER COROUSEL SECTION */
+    
+
+
+    /* BRAND DISPLAY 1 */
+    #topBrand_1{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* CATEGORY BAG SECTION */
+    #categoryBag{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* BRAND DISPLAY 2 */
+    .display{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #explore_more :nth-child(4), #explore_more :nth-child(5){
+        display: none;
+    }
+
+    /* BRAND DISPLAY 3 */
+   .h1ForWeb{
+       display: none;
+   }
+  .display ~ .display{
+    display: none;
+}
+
+
+.builder{
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+
+
+/* WOMENS_HOMEPAGE */
+#topBrand_women{
+    grid-template-columns: repeat(3, 1fr);
+}
+.categoryBag_women{
+    grid-template-columns: repeat(3, 1fr);
+}
+#explore_more_women :nth-child(4), #explore_more_women :nth-child(5){
+    display: none;
+}
+
+.forWeb{
+    display: none;
+}
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media all and (max-width : 550px){
+
+    
+   /* TOGGLE MENU */
+    #toggle{
+        visibility: visible;
+        width: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        color: var(--primaryColor);
+    }
+
+ 
+    .dropbtn {
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        background-color:  #ff869a; 
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        transition: all 500ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+      }
+      .dropdown-content .top{
+          padding: 0 0.5rem 1.3rem;
+          background-color: #ffc0cb;
+      }
+      .dropdown-content .bottom{
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-size: 2.5rem;
+          padding: 1.5rem 0;
+          background-color: #ff9faf;
+          color: #52101b;
+      }
+
+      .dropdown-content .bottom  i{
+        cursor: pointer;
+    }
+      
+      .dropdown-content a {
+        color: var(--primaryColor);
+        width: 89%;
+        margin: auto;
+        padding: 1.2rem 2rem;
+        text-decoration: none;
+        display: block;
+        font-size:1.6rem;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+      }
+      
+      .dropdown-content a:hover{
+        background-color: #ffe5e9;
+        border-radius: 1rem;
+      }
+      .show {
+          width: 250px;
+          height: 350px;
+    }
+
+    /* BRAND DISPLAY 1 */
+    #topBrand_1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* CATEGORY BAG SECTION */
+    #categoryBag{
+        grid-template-columns: repeat(3, 1fr);
+    }
+ 
+    /* BRAND DISPLAY 2 */
+    .display{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #explore_more :nth-child(5){
+        display: none;
+    }
+
+    .container img{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    /* BRAND DISPLAY 3 */
+    .h1ForWeb{
+        display: none;
+    }
+   .display ~ .display{
+     display: none;
+ }
+
+ .builder{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.5rem;
+}
+.builder :nth-child(5){
+    display: none;
+}
+
+    /* FOOTER SECTION */
+   
+    /* WOMEN SECTION */
+    #topBrand_women{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categoryBag_women{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .categoryBag_women :nth-child(4),.categoryBag_women :nth-child(5){
+        display: none;
+    }
+
+     #explore_more_women :nth-child(5){
+        display: none;
+    }
+
+    .forWeb{
+        display: none;
+    }
+    .forMob{
+        display: none
+    }
+}
+
+
+.footer-image-1 {
+    width: 100%;
+    margin: 0px auto;
+    object-fit: cover;
+  }
+  
+  /* Image Slider CSS */
+  .slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 70px;
+  }
+  
+  .slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input {
+    display: none;
+  }
+  
+  .slide {
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    padding: 3.9px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .manual-btn:hover {
+    background: gray;
+  }
+  
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first {
+    margin-left: -60%;
+  }
+  
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 475px;
+  }
+  
+  .navigation-auto div {
+    border: 2px solid rgba(211, 211, 211, 0.651);
+    padding: 1.9px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: gray;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: gray;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: gray;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: gray;
+  }
+  
+  
+  /* Side Image */
+  .side-image-1 {
+    position: fixed;
+    right: 0;
+    top: 450px;
+    cursor: pointer;
+  }
+  .img-container {
+    width: 1080px;
+    margin: 40px auto;
+  }
